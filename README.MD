@@ -8,6 +8,12 @@ Same playback and recording specifications as the original library.
 Controlled via 2-4 pushbutton switches on the front, with an optional rotary encoder for volume control; or complete control via an infrared remote control (Altronics A1012 used).
 16x2 LCD screen.
 
+**For this project you will need**
+1. Arduino Uno or similar;
+2. Altronics Inventa Mega Box;
+3. infrared remote control;
+4. jumper wires, cables and a microSD card.
+
 **Pin Connections**
 ```
 From    -> To
