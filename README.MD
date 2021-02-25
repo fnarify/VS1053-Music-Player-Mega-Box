@@ -64,3 +64,11 @@ Patch files for the VS1053 can be found here: http://www.vlsi.fi/en/support/soft
 I've included most of the patch files required and already converted. You will need patches.053 (required for ogg etc playback) and oggenc.053 (for recording to ogg) located in the root directory of the SD card.
 
 Originally publish in the February 2018 issue of Silicon Chip magazine.
+
+**Troubleshooting**
+
+If you experience buzzing present in recorded audio using the on-board microphone, you may need to attach a 3.6V 1W zener diode (1N4729, DO-14) with the cathode going to the 3V header on the module and the anode to GND (see https://imgur.com/a/N6OBNKy for a photo). This can be plugged into the stackable headers so it's not a permanent change. This is due to a problem with the regulator on the board causing ripple on the audio output.
+
+Also some of these modules may come with bad tracks and/or solder joints, one such example was found where the SMD resistor on the CS line of the on-board SD card had no continuity due to a very fine break on the PCB trace.
+
+These are not all the problems that can occur with the VS1053-based modules (particularly the cheaper ones available online) but the ones that I've come across.
